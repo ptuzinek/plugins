@@ -33,11 +33,11 @@ class VideoPlayerValue {
     this.position = Duration.zero,
     this.caption = Caption.none,
     this.buffered = const <DurationRange>[],
-    this.isInitialized = false,
+    this.isInitialized = true,
     this.isPlaying = false,
     this.isLooping = false,
     this.isBuffering = false,
-    this.volume = 1.0,
+    this.volume = 0.0,
     this.playbackSpeed = 1.0,
     this.errorDescription,
   });
