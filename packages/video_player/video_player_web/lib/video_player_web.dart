@@ -163,7 +163,7 @@ class _VideoPlayer {
   final String uri;
   final int textureId;
   late VideoElement videoElement;
-  bool isInitialized = false;
+  bool isInitialized = true;
   bool isBuffering = false;
 
   void setBuffering(bool buffering) {
@@ -180,7 +180,7 @@ class _VideoPlayer {
     videoElement = VideoElement()
       ..src = uri
       ..autoplay = true
-      ..controls = false
+      ..controls = true
       ..style.border = 'none';
 
     // Allows Safari iOS to play the video inline
