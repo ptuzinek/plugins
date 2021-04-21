@@ -300,9 +300,9 @@ static inline CGFloat radiansToDegrees(CGFloat radians) {
 }
 
 - (void)updatePlayingState {
-  if (!_isInitialized) {
-    return;
-  }
+  // if (!_isInitialized) {
+  //   return;
+  // }
   if (_isPlaying) {
     [_player play];
   } else {
