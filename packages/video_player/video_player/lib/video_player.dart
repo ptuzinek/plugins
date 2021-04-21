@@ -653,15 +653,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
   Widget build(BuildContext context) {
     return _textureId == VideoPlayerController.kUninitializedTextureId
         ? Container()
-        : Column(
-            children: [
-              Container(
-                height: 550,
-                color: Colors.red,
-              ),
-              _videoPlayerPlatform.buildView(_textureId),
-            ],
-          );
+        : _videoPlayerPlatform.buildView(_textureId);
   }
 }
 
