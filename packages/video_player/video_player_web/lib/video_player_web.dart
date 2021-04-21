@@ -179,7 +179,7 @@ class _VideoPlayer {
   void initialize() {
     videoElement = VideoElement()
       ..src = uri
-      ..autoplay = false
+      ..autoplay = true
       ..controls = false
       ..style.border = 'none';
 
